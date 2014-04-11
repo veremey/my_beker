@@ -1,0 +1,18 @@
+// Normally mainpage styles
+.slider
+	position: relative
+	top: 55px
+	height: 360px
+	+s(bg_slider)
+
+.slider__spin
+	position: absolute
+		&:before
+		+s(left_slider)
+	left: 20px
+	&:after
+	+s(right_slider)
+.tv
+	position: absolute
+	top: 30px
+	left: 710px

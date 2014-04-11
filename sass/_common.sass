@@ -1,0 +1,318 @@
+$dark: #171717
+$grey: #464646
+$darkgrey: #292929
+$yellow: #f8eb01
+$blue: #0185C6
+$white: #fff
+
+body
+	font: normal 13px/1.15 Arial, sans-serif
+	width: 100%
+	min-width: 1028px
+	overflow: hidden
+
+
+.header
+	background: $dark
+	color: $white
+	overflow: hidden
+	z-index: 1
+	+clr
+
+.l-container
+	margin: 0 auto
+	position: relative
+	width: 990px
+	+clr
+
+.header__logo
+	float: left
+	+s(logo)
+
+.header__form
+	position: relative
+	float: left
+	margin: 60px 10px 0px 65px
+	width: 300px
+	i
+		right: 0
+		position: absolute
+		top: 10px
+		+s(lupa)
+
+.header__search-input
+	border: 3px solid $grey
+	height: 30px
+	padding-left: 10px
+	width: 294px
+	font-weight: bold 
+
+.header__search-example
+	font-size: 11px
+	margin: 5px 15px
+	a
+		border-bottom: 1px dotted $blue
+		color: $blue
+		margin-left: 5px
+		text-decoration: none 
+		&:hover
+			border-bottom: none
+
+.header__info
+	float: right
+	font-size: 16px
+	margin: 60px 0px 0px
+	position: relative
+
+.header__call
+	float: left
+	position: relative
+	margin-right: 30px
+	li
+		font-weight: bold 
+	i
+		position: absolute
+		right: 110px
+		top: 0
+		+s(phone)
+	a
+		border-bottom: 1px dotted $blue
+		color: $blue
+		font-size: 11px 
+		height: 60px
+		text-decoration: none 
+		&:hover
+			border-bottom: none 
+.header__basket 
+	float: right
+	margin: 0 0 0 70px
+
+.basket__amount
+	position: absolute
+	right: 95px
+	top: 0px
+	+s(basket)
+	i
+		background: #940c1a 
+		+border-radius (50%) 
+		color: $white
+		font-size: 13px 
+		height: 20px
+		padding-top: 2px 
+		position: absolute
+		right: -5px 
+		text-align: center
+		text-decoration: none 
+		top: 0px
+		width: 20px
+
+.basket__indent
+	border-bottom: 1px dotted $blue
+	color: $blue
+	font-size: 11px 
+	position: absolute
+	right: 0px
+	text-decoration: none 
+	top: 15px 
+	&:hover
+		border-bottom: none 
+
+	// HEADER MENU
+
+
+.header__menu
+	background: $darkgrey
+	bottom: 0
+	height: 55px
+	right: 0
+	left: 0 
+	font-weight: bold  
+	ul
+		font-size: 0
+		margin: 0 auto 
+	li
+		float: left
+		position: relative
+		&:before, &:after
+			content: ""
+			height: 34px
+			position: absolute
+			top: 9px
+			width: 1px
+			background: #313131
+			left: -1px
+		&:after
+			background: #232323
+			left: -2px
+		&:hover
+			background: $yellow
+			color: $dark
+			z-index: 500 
+			&:after, &:before
+				display: none 
+		&:first-child
+			&:after, &:before
+				content: ""
+				display: none 
+	a
+		color: $white
+		position: relative
+		display: block
+		font-size: 13px 
+		line-height: 55px 
+		padding: 0px 17px
+		margin: 0 -1px 
+		text-decoration: none
+		&:hover
+			color: $grey
+
+
+	// HEADER UP
+
+
+.header__up
+	background-color: rgba(0,0,0, .4) 
+	border: 2px solid transparent
+	color: #FFF 
+	font-size: 11px
+	height: 35px
+	position: absolute
+	top: 0px
+	left: 0
+	right: 0 
+	z-index: 3 
+	li
+		display: inline-block
+		line-height: 35px 
+	a
+		border: 2px solid transparent
+		color: $yellow
+		font-size: 11px
+		margin-left: 20px
+		padding: 4px
+		&:hover
+			border: 2px solid $yellow
+			text-decoration: none 
+		&:first-child
+			margin-left: 0px 
+			padding-left: 0
+.header__up-menu
+	float: left
+
+.header__up-enter 
+	float: right
+	a
+		color: $blue
+		padding: 4px
+		&:hover
+			border: 2px solid $yellow
+
+// FOOTER
+
+.footer
+	background-color: $dark 
+	height: 300px 
+	position: relative
+	bottom: 0 
+	+clr
+
+.footer__wrap
+	+clr
+.footer__weare
+	height: 175px
+	width: 24%
+	float: left
+	padding: 25px 0 10px 10px
+
+.footer__contakt
+.footer__heading
+	color: $white
+	padding: 10px 0
+	border-bottom: 1px solid $yellow 
+
+.left
+	float: left
+	margin: 10px 20px 0 0 
+.right
+	float: right
+	margin: 10px 35px 0 0
+
+.footer__link
+	position: relative
+	padding: 5px 0 
+	color: $white 
+	a
+		color: $yellow
+		&:hover
+			color: $blue
+			text-decoration: none
+
+.footer__address
+	padding: 10px 0 0 30px
+
+.office,
+.tel,
+.clock
+	display: block
+	position: absolute
+	top: 5px
+	left: -25px  
+.office
+	+s(f_nav)
+.tel
+	+s(f_phone)
+.clock
+	+s(f_clock)
+
+.soc li
+	display: inline-block
+	padding: 20px 10px 0 0
+	height: 50px
+
+.vk a, .f a, .t a, .ok a, .g a
+	display: block
+.vk a
+	+s(vk)
+	&:hover
+		+s(vk_h)
+.f a
+	+s(f)
+	&:hover
+		+s(f_h)
+.t a
+	+s(t)
+	&:hover
+		+s(t_h)
+.ok a
+	+s(ok)
+	&:hover
+		+s(ok_h)
+.g a
+	+s(g)
+	&:hover
+		+s(g_h)
+
+.license
+	border-top: 1px solid #2E2E2F 
+	position: relative
+	color: $grey 
+	float: left
+	padding: 20px 0 0 55px
+	i
+		position: absolute
+		top: 10px
+		left: 0px 
+		+s(f_bekker)
+
+.design
+	border-top: 1px solid #2E2E2F 
+	position: relative
+	width: 200px
+	color: $grey 
+	float: right
+	padding: 18px 0px 0 60px 
+	i
+		position: absolute
+		top: 25px
+		left: 0 
+		+s(sd)
