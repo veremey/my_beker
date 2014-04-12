@@ -21,7 +21,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font: normal 13px/1.15 Arial, sans-serif; width: 100%; min-width: 1028px; overflow: hidden; }
 
-.header { background: #171717; color: white; overflow: hidden; z-index: 1; *zoom: 1; }
+.header { background: #171717; color: white; z-index: 1; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 
 .l-container { margin: 0 auto; position: relative; width: 990px; *zoom: 1; }
@@ -54,7 +54,7 @@ body { font: normal 13px/1.15 Arial, sans-serif; width: 100%; min-width: 1028px;
 .basket__indent { border-bottom: 1px dotted #0185c6; color: #0185c6; font-size: 11px; position: absolute; right: 0px; text-decoration: none; top: 15px; }
 .basket__indent:hover { border-bottom: none; }
 
-.header__menu { background: #292929; bottom: 0; height: 55px; right: 0; left: 0; font-weight: bold; }
+.header__menu { background: #292929; bottom: 0; right: 0; left: 0; font-weight: bold; }
 .header__menu ul { font-size: 0; margin: 0 auto; }
 
 .header__menu-item { float: left; position: relative; }
