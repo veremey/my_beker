@@ -130,30 +130,32 @@ body
 	ul
 		font-size: 0
 		margin: 0 auto 
-	li
-		float: left
-		position: relative
-		&:before, &:after
+.header__menu-item
+	float: left
+	position: relative
+	&:before, &:after
+		content: ""
+		height: 34px
+		position: absolute
+		top: 9px
+		width: 1px
+		background: #313131
+		left: -1px
+	&:after
+		background: #232323
+		left: -2px
+	&:hover
+		background: $yellow
+		color: $dark
+		z-index: 500 
+		&:after, &:before
+			display: none 
+		.header__menu-down
+			display: block
+	&:first-child
+		&:after, &:before
 			content: ""
-			height: 34px
-			position: absolute
-			top: 9px
-			width: 1px
-			background: #313131
-			left: -1px
-		&:after
-			background: #232323
-			left: -2px
-		&:hover
-			background: $yellow
-			color: $dark
-			z-index: 500 
-			&:after, &:before
-				display: none 
-		&:first-child
-			&:after, &:before
-				content: ""
-				display: none 
+			display: none 
 	a
 		color: $white
 		position: relative
@@ -166,6 +168,21 @@ body
 		&:hover
 			color: $grey
 
+.header__menu-down
+	display: none
+	position: absolute
+	background-color: blue
+	border: 3px solid $yellow
+	top: 55px
+	left: 0 
+	z-index: 999 
+	ul
+		z-index: 999
+	li
+		z-index: 999 
+	a
+		color: #000 
+		z-index: 999 
 
 	// HEADER UP
 
