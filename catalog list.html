@@ -49,29 +49,29 @@
 		</form>
 
 		<div class="header__search-example">
-			<p>Например:
-			<a href="#">Акустический кабель</a>
-			</p>
+			<p>Например:</p>
+			<a class="header__link" href="#">Акустический кабель</a>
 		</div>
 
 	</div>
 	
 	<div class="header__info">
 		
-		<div class="header__basket">
-			<strong>1 000 грн</strong>
-			<a class="basket__indent" href="#">Оформить заказ</a>
-			<a href="#" class="basket__amount">
-			<i>12</i></a>
-		</div>
-
 		<div class="header__call">
 			<ul>
 				<li>087 567656</li>
 				<li>675 675677</li>
 			</ul>
-			<a href="#">Обратный звонок</a>
+			<a class="header__link" href="#">Обратный звонок</a>
 			<i></i>
+		</div>
+
+		<div class="header__basket">
+			<div class="basket__wrap">
+				<strong>1 000 грн</strong><br>
+				<a class="header__link" href="#">Оформить заказ</a>
+			</div>
+			<a href="#" class="basket__amount"><i>12</i></a>
 		</div>
 
 	</div>
@@ -156,8 +156,8 @@
 				<input class="sidebar__produce" type="checkbox" name="Clearwater "><a href="#">Clearwater<sup>(562)</sup></a><br>
 				<input class="sidebar__produce" type="checkbox" name="Goldwater" disabled=""><a href="#">Goldwater</a><br>
 			</form>
-		<a class="sidebar__all"href="#">Посмотреть все</a>
-		<div class="sidebar__sort"><a href="#">Цена</a></div>
+		<a class="sidebar__all" href="#">Посмотреть все</a>
+		<a class="sidebar__sort" href="#">Цена</a>
 		<ul class="sidebar__price">
 			<li>от</li>
 			<li>0</li>
@@ -173,7 +173,7 @@
 				<input class="sidebar__produce" type="checkbox" name="Корпусные"><a href="#">Корпусные<sup>(562)</sup></a><br>
 			</form>
 		</div>
-		<a href="#" class="sidebar__reclame">
+		<a class="sidebar__reclame" href="#" >
 			<img src="img/sidebar__reclame.png" alt="">
 		</a>
 	</div>
@@ -345,6 +345,30 @@
 		<div class="popular__item">
 			<h2 class="popular__goods">Мы вам рекомендуем</h2>
 		</div>
+	<div class="popular__wrap">
+		<div class="popular__list">
+			<div class="popular__top">
+				<h3 class="catalog__heading">
+					<a class="catalog__lot" href="#">Nordost Blue Heaven HDMI</a>
+				</h3>
+				<a href="#" class="catalog__image">
+					<img class="image__goods"src="img/hdmi.png" alt="">
+				</a>
+				<div class="catalog__price-wrap">
+					<a class="item__price" href="#">
+						<strong>8500 <sub>грн</sub><!--sub не працюэ --></strong>
+						<img src="img/icons/buy.png" alt="">
+					</a>
+					<a href="#" class="star">
+						<img src="img/star.png" alt="">
+						<span>(10)</span>
+					</a>
+				</div>
+			</div>
+			<div class="popular__bottom">
+				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
+			</div>
+		</div>
 
 		<div class="popular__list">
 			<div class="popular__top">
@@ -368,7 +392,7 @@
 			<div class="popular__bottom">
 				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
 			</div>
-</div>
+		</div>
 
 		<div class="popular__list">
 			<div class="popular__top">
@@ -392,7 +416,7 @@
 			<div class="popular__bottom">
 				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
 			</div>
-</div>
+		</div>
 
 		<div class="popular__list">
 			<div class="popular__top">
@@ -416,7 +440,7 @@
 			<div class="popular__bottom">
 				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
 			</div>
-</div>
+		</div>
 
 		<div class="popular__list">
 			<div class="popular__top">
@@ -440,53 +464,29 @@
 			<div class="popular__bottom">
 				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
 			</div>
-</div>
-
-		<div class="popular__list">
-			<div class="popular__top">
-				<h3 class="catalog__heading">
-					<a class="catalog__lot" href="#">Nordost Blue Heaven HDMI</a>
-				</h3>
-				<a href="#" class="catalog__image">
-					<img class="image__goods"src="img/hdmi.png" alt="">
-				</a>
-				<div class="catalog__price-wrap">
-					<a class="item__price" href="#">
-						<strong>8500 <sub>грн</sub><!--sub не працюэ --></strong>
-						<img src="img/icons/buy.png" alt="">
-					</a>
-					<a href="#" class="star">
-						<img src="img/star.png" alt="">
-						<span>(10)</span>
-					</a>
-				</div>
-			</div>
-			<div class="popular__bottom">
-				Значительная инновация в том, что новый ряд МС40 рассчитан на всех ценителей музыки, ищущих нового высококачественного воспроизведения звука. С введением новой высококлассной технологии SCS в данном ценовом сегменте, Cabasse приглашает вас открыть для себя новый мир звука, насыщенного точностью воспроизведения, реалистичностью и объемной звуковой сценой 3D. Трехполосная полочная акустика Formentera несет живые звуковые эмоции с элегантностью и непревзойденным качеством.
-			</div>
-</div>
-<div class="shit">
+		</div>
+	</div>
+<div class="info__wrap">
 
 	<div class="info">
-		<div class="info__wrap">
+		<div class="info__item">
 			<h3 class="info__heading">Гарантии</h3>
 		</div>
 		<p>На основании ст. 9 Закона Украины «О защите прав потребителя » обмен/возврат товара производится в течение 14 дней с момента покупки (товар не подошел по цвету, форме, габаритам, размеру или по иным причинам не может быть использован).</p>
 	</div>
 	
 	<div class="info">
-		<div class="info__wrap">
+		<div class="info__item">
 			<h3 class="info__heading">Программа лояльности</h3>
 		</div>
 		<p>Возврат аксессуаров: Возврату поддежат НЕРАСПАКОВАННЫЕ аксессуары. Если имеются следы вскрытия аксессуара и попытки вторичной запаковки (особенно это касается</p>
 	</div>
 	
 	<div class="info">
-		<div class="info__wrap">
+		<div class="info__item">
 			<h3 class="info__heading">Услуги</h3>
 		</div>
-		<p>Товарный вид: Многие товары, в частности электроника, приходят запечатанными с заводскими пленками, и это является одним из факторов определения "новизны" товара. Вскрытая зарядка, гарнитура, любые проводки и батарея 
-</p>
+		<p>Товарный вид: Многие товары, в частности электроника, приходят запечатанными с заводскими пленками, и это является одним из факторов определения "новизны" товара. Вскрытая зарядка, гарнитура, любые проводки и батарея </p>
 	</div>
 
 </div>
