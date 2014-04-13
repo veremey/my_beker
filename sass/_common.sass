@@ -119,72 +119,6 @@ body
 	// HEADER MENU
 
 
-.header__menu
-	background: $darkgrey
-	bottom: 0
-	right: 0
-	left: 0 
-	font-weight: bold  
-	ul
-		font-size: 0
-		margin: 0 auto 
-.header__menu-item
-	float: left
-	position: relative
-	&:before, &:after
-		content: ""
-		height: 34px
-		position: absolute
-		top: 9px
-		width: 1px
-		background: #313131
-		left: -1px
-	&:after
-		background: #232323
-		left: -2px
-	&:hover
-		background: $yellow
-		color: $dark
-		z-index: 500 
-		&:after, &:before
-			display: none 
-		.header__menu-down
-			display: block
-	&:first-child
-		&:after, &:before
-			content: ""
-			display: none 
-	a
-		color: $white
-		position: relative
-		display: block
-		font-size: 13px 
-		line-height: 55px 
-		padding: 0px 17px
-		margin: 0 -1px 
-		text-decoration: none
-		&:hover
-			color: $grey
-
-.header__menu-down
-	display: none
-	position: absolute
-	background-color: blue
-	border: 3px solid $yellow
-	top: 55px
-	left: 0 
-	z-index: 999 
-	ul
-		z-index: 999
-	li
-		z-index: 999 
-	a
-		color: #000 
-		z-index: 999 
-
-	// HEADER UP
-
-
 .header__up
 	background-color: rgba(0,0,0, .4) 
 	border: 2px solid transparent
@@ -221,6 +155,93 @@ body
 		padding: 4px
 		&:hover
 			border: 2px solid $yellow
+
+
+.header__menu
+	background: $darkgrey
+	bottom: 0
+	right: 0
+	left: 0 
+	font-weight: bold  
+.header__menu-item
+	float: left
+	position: relative
+	&:before, &:after
+		content: ""
+		height: 34px
+		position: absolute
+		top: 9px
+		width: 1px
+		background: #313131
+		left: -1px
+	&:after
+		background: #232323
+		left: -2px
+	&:hover
+		background: $yellow
+		color: $dark
+		z-index: 500 
+		&:after, &:before
+			display: none 
+		.header__menu-down
+			display: block
+	&:first-child
+		&:after, &:before
+			content: ""
+			display: none 
+.header__menu-link
+	color: $white
+	position: relative
+	display: block
+	font-size: 13px 
+	line-height: 55px 
+	padding: 0px 17px
+	margin: 0 -1px 
+	text-decoration: none
+	&:hover
+		color: $grey
+
+.header__menu-down
+	display: none
+	width: 750px
+	overflow: hidden
+	position: absolute
+	background-color: #fff
+	border: 3px solid $yellow
+	top: 55px
+	left: 0 
+	z-index: 9 
+.sub__menu
+	position: relative
+	padding: 0 0 27px 0 
+	font-size: 0 
+	float: left
+	z-index: 9
+	-ms-word-wrap: nowrap 
+	word-wrap: nowrap 
+
+.sub__menu-item
+	margin: 0 0 5px 25px
+	padding: 0 
+	&:first-child
+		margin-top: 25px 
+.sub__menu-heading
+	font-size: 13px 
+	font-weight: bold 
+	margin: 25px 0 15px 0 
+	z-index: 9 
+.sub__menu-link
+	font-size: 12px 
+	font-weight: normal 
+	color: $blue
+	text-decoration: none
+	border-bottom: 1px solid $blue 
+	z-index: 9 
+	&:hover
+		border-bottom: none
+
+	// HEADER UP
+
 
 // FOOTER
 
