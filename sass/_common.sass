@@ -49,24 +49,30 @@ body
 .header__search-example
 	font-size: 11px
 	margin: 5px 15px
-	a
-		border-bottom: 1px dotted $blue
-		color: $blue
-		margin-left: 5px
-		text-decoration: none 
-		&:hover
-			border-bottom: none
+	p
+		display: inline
+		margin-right: 5px
+.header__link
+	font-size: 11px 
+	border-bottom: 1px dotted $blue
+	color: $blue
+	text-decoration: none 
+	&:hover
+		border-bottom: none
 
 .header__info
 	float: right
+	min-width: 300px
 	font-size: 16px
 	margin: 60px 0px 0px
 	position: relative
+	+clr
 
 .header__call
 	float: left
 	position: relative
 	margin-right: 30px
+	+clr
 	li
 		font-weight: bold 
 	i
@@ -74,22 +80,18 @@ body
 		right: 110px
 		top: 0
 		+s(phone)
-	a
-		border-bottom: 1px dotted $blue
-		color: $blue
-		font-size: 11px 
-		height: 60px
-		text-decoration: none 
-		&:hover
-			border-bottom: none 
 .header__basket 
+	position: absolute
+	top: 0
+	right: 0
+	+clr
+.basket__wrap
 	float: right
-	margin: 0 0 0 70px
+	margin-left: 67px 
 
 .basket__amount
-	position: absolute
-	right: 95px
-	top: 0px
+	position: relative
+	display: block
 	+s(basket)
 	i
 		background: #940c1a 
@@ -105,16 +107,7 @@ body
 		top: 0px
 		width: 20px
 
-.basket__indent
-	border-bottom: 1px dotted $blue
-	color: $blue
-	font-size: 11px 
-	position: absolute
-	right: 0px
-	text-decoration: none 
-	top: 15px 
-	&:hover
-		border-bottom: none 
+
 
 	// HEADER MENU
 
@@ -166,7 +159,8 @@ body
 .header__menu-item
 	float: left
 	position: relative
-	&:before, &:after
+	&:before,
+	&:after
 		content: ""
 		height: 34px
 		position: absolute
@@ -181,12 +175,14 @@ body
 		background: $yellow
 		color: $dark
 		z-index: 500 
-		&:after, &:before
+		&:after,
+		&:before
 			display: none 
 		.header__menu-down
 			display: block
 	&:first-child
-		&:after, &:before
+		&:after,
+		&:before
 			content: ""
 			display: none 
 .header__menu-link
@@ -204,10 +200,9 @@ body
 .header__menu-down
 	display: none
 	width: 750px
-	overflow: hidden
-	position: absolute
 	background-color: #fff
 	border: 3px solid $yellow
+	position: absolute
 	top: 55px
 	left: 0 
 	z-index: 9 
@@ -234,6 +229,7 @@ body
 	font-size: 12px 
 	font-weight: normal 
 	color: $blue
+	padding: 0 
 	text-decoration: none
 	border-bottom: 1px solid $blue 
 	z-index: 9 
