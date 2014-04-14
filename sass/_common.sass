@@ -52,7 +52,7 @@ body
 	p
 		display: inline
 		margin-right: 5px
-.header__link
+a.example__link
 	font-size: 11px 
 	border-bottom: 1px dotted $blue
 	color: $blue
@@ -81,10 +81,13 @@ body
 		top: 0
 		+s(phone)
 .header__basket 
-	position: absolute
-	top: 0
-	right: 0
+	position: relative
+	float: right
 	+clr
+	span
+		position: absolute
+		top: 0
+		left: -55px 
 .basket__wrap
 	float: right
 	margin-left: 67px 
