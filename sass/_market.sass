@@ -125,18 +125,26 @@ a.sidebar__all
 	border: 1px solid #efefef
 	border-top: none 
 	margin-top: 43px 
-.main__top
+.cat__top
 	background: #FBFBFB 
 	height: 40px
 	+clr
-.top__cat
+.cat__left
 	float: left
-.top__type
+.cat__type
 	float: right
 .cat__item
 	position: relative
 	float: left
 	display: inline-block
+	&:after
+		content: ""
+		position: absolute
+		top: 8px
+		right: 0
+		width: 1px
+		height: 25px
+		background: #e5e5e5 
 	form
 		float: left
 	span
@@ -152,19 +160,16 @@ a.sidebar__all
 		background: #747475 
 		padding: 2px
 		margin-left: 7px 
-	a
-		color: $blue
-		text-decoration: none 
-		border-bottom: 1px dotted
-		line-height: 40px 
-	&:after
-		content: ""
-		position: absolute
-		top: 8px
-		right: 0
-		width: 1px
-		height: 25px
-		background: #e5e5e5 
+a.cat__link,
+	margin: 0 37px 0 13px 
+a.cat__link,
+a.cat__link-expensive
+	color: $blue
+	text-decoration: none 
+	border-bottom: 1px dotted
+	line-height: 40px 
+	&:hover
+		border-bottom: none 
 .goods_on_page
 	position: relative
 	margin: 10px 5px 10px 10px
@@ -181,18 +186,18 @@ a.sidebar__all
 		+arr(8,6,red,b)
 a.cat__link-expensive
 	margin: 0 24px 0 13px 
+
 	&:after
 		content: ""
 		position: absolute
 		top: 20px
 		right: 15px 
 		+arr(6,4,$blue,b)
-a.cat__link
-	margin: 0 37px 0 13px 
-.top__type
+
+.cat__type
 	padding: 6px
 .type__gride,
-.type__gride--is-active
+.type__list--is-active
 	border: 1px solid #e4e4e4 
 	width: 26px 
 	height: 25px
@@ -200,7 +205,7 @@ a.cat__link
 	img
 		display: block
 		padding: 4px
-.type__gride--is-active
+.type__list--is-active
 	background-color: #eee
 	+box-shadow(inset 0 2px 3px rgba(0,0,0,.16))
 
@@ -276,7 +281,7 @@ a.cat__link
 		border-bottom: 1px dotted $grey
 		&:hover
 			color: $blue
-			border-bottom: 1px dotted $blue
+			border-bottom: none
 
 .pages
 	background: #FBFBFB
