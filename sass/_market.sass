@@ -183,6 +183,11 @@ a.sidebar__all
 	border: 1px solid #efefef
 	border-top: none 
 	margin-top: 43px 
+
+
+// cat__top
+
+
 .cat__top
 	background: #FBFBFB 
 	height: 40px
@@ -244,28 +249,25 @@ a.cat__link-expensive
 		+arr(8,6,red,b)
 a.cat__link-expensive
 	margin: 0 24px 0 13px 
-
 	&:after
 		content: ""
 		position: absolute
 		top: 20px
 		right: 15px 
 		+arr(6,4,$blue,b)
-
 .cat__type
 	padding: 6px
-.type__gride,
-.type__list--is-active
+.cat__gride,
+.cat__list--is-active
 	border: 1px solid #e4e4e4 
 	width: 26px 
 	height: 25px
 	display: inline-block 
+	background-color: #eee
+	+box-shadow(inset 0 2px 3px rgba(0,0,0,.16))
 	img
 		display: block
 		padding: 4px
-.type__list--is-active
-	background-color: #eee
-	+box-shadow(inset 0 2px 3px rgba(0,0,0,.16))
 
 
 // catalog
@@ -305,7 +307,6 @@ a.cat__link-expensive
 			-ms-transform: scale(1.1) 
 			-o-transform: scale(1.1) 
 			transform: scale(1.1) 
-
 
 
 .l-catalog__main
@@ -374,18 +375,18 @@ a.pages__is-active
 	height: auto
 	margin: 49px 0 43px 0
 
-.popular__wrap
+.prod__wrap
 	width: 100% 
 	height: auto
 	+clr
-.popular__item
+.prod__item
 	border-bottom: 2px solid $yellow
 	margin-top: 43px 
 .main__baner-img
 	width: 1028px 
 	height: 100% 
 
-.popular__list
+.prod__list
 	position: relative
 	float: left
 	border-left: 1px solid #f4f4f4
@@ -395,10 +396,10 @@ a.pages__is-active
 	&:hover
 		+box-shadow(0 0 7px rgba(0,49,82,.25))
 		z-index: 11 
-		.popular__top
+		.prod__top
 			border-bottom: 1px solid #fff
 			z-index: 11 
-		.popular__bottom
+		.prod__bottom
 			display: block
 			+box-shadow(0 4px 7px rgba(0,49,82,.25))
 		.catalog__image
@@ -407,7 +408,7 @@ a.pages__is-active
 			-ms-transform: scale(1.1) 
 			-o-transform: scale(1.1) 
 			transform: scale(1.1) 
-.popular__top
+.prod__top
 	position: relative
 	border-bottom: 1px solid #f4f4f4
 .catalog__image
@@ -442,7 +443,7 @@ a.pages__is-active
 		position: absolute
 		top: 0
 		right: -2px 
-.popular__bottom
+.prod__bottom
 	display: none
 	position: absolute
 	top: 258px
@@ -451,6 +452,8 @@ a.pages__is-active
 	background: #FFF 
 	padding-top: 15px
 	z-index: 10  
+
+// info ___ 
 
 .info__wrap
 	position: relative
