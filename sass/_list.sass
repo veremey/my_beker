@@ -99,15 +99,6 @@ a.sidebar__sort
 		top: -5px
 		margin-left: 3px 
 		font-size: 10px
-// .sidebar__produce
-// 	margin: 7px 13px 0px 10px
-// 	&:active
-// 		font-weight: bold 
-// 	sup
-// 		font-size: 10px 
-// 	a
-// 		text-decoration: none
-// 		margin: 5px 2px 5px 10px
 a.sidebar__all
 	display: inline-block
 	margin: 15px 0 10px 35px
@@ -173,7 +164,6 @@ a.sidebar__all
 	position: relative
 	float: right
 	width: 778px
-	margin-bottom: 49px 
 	+clr
 .main__name
 	text-transform: uppercase
@@ -188,12 +178,9 @@ a.sidebar__all
 	border: 1px solid #efefef
 	border-top: none 
 	margin-top: 43px 
+	background: #FBFBFB 
 	+clr
-a.main__baner
-	display: block
-	width: 1028px
-	height: auto
-	overflow: hidden
+
 
 // cat__top
 
@@ -278,9 +265,8 @@ a.cat__link-expensive
 .cat__is-active
 	background-color: #eee
 	+box-shadow(inset 0 2px 3px rgba(0,0,0,.16))
+
 // catalog
-
-
 
 .l-catalog
 	position: relative
@@ -304,18 +290,8 @@ a.cat__link-expensive
 	img
 		margin: auto
 		max-width: 90%
-		height: auto 
-		-webkit-transition: all 0.2s linear
-		-moz-transition: all 0.2s linear
-		-ms-transition: all 0.2s linear
-		-o-transition: all 0.2s linear
-		transition: all 0.2s linear
-		&:hover
-			-webkit-transform: scale(1.1) 
-			-moz-transform: scale(1.1) 
-			-ms-transform: scale(1.1) 
-			-o-transform: scale(1.1) 
-			transform: scale(1.1) 
+		height: auto
+
 .l-catalog__main
 	width: 343px 
 	padding: 17px 0 20px 20px 
@@ -377,10 +353,16 @@ a.pages__is-active
 	margin-left: 240px 
 	text-transform: lowercase
 
-.main__baner-reclame
-	display: block
+
+a.main__baner
+	display: inline-block
+	width: 1028px
 	height: auto
-	margin: 49px 0 43px 0
+	overflow: hidden
+	margin-top: 49px 
+.main__baner-img
+	width: 1028px 
+	height: 100% 
 
 .prod__wrap
 	width: 100% 
@@ -389,9 +371,6 @@ a.pages__is-active
 .prod__item
 	border-bottom: 2px solid $yellow
 	margin-top: 43px 
-.main__baner-img
-	width: 1028px 
-	height: 100% 
 
 .prod__list,
 .prod__grid
@@ -416,8 +395,14 @@ a.pages__is-active
 			-ms-transform: scale(1.1) 
 			-o-transform: scale(1.1) 
 			transform: scale(1.1) 
+			-webkit-transition: all .2s linear 
+			-moz-transition: all .2s linear 
+			-ms-transition: all .2s linear 
+			-o-transition: all .2s linear 
+			transition: all .2s linear 
 .prod__grid
-	width: 33%
+	min-width: 33%
+	border-bottom: none 
 	+clr
 
 
@@ -465,6 +450,15 @@ a.pages__is-active
 	background: #FFF 
 	padding-top: 15px
 	z-index: 10  
+
+
+// catalog__grid
+
+
+
+
+
+
 
 // info ___ 
 
