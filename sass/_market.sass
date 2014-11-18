@@ -5,14 +5,14 @@
 		display: inline-block
 		font: 13px normal, sans-serif
 		color: #1a1a1b
-		padding: 0 10px 
+		padding: 0 10px
 	strong
 		padding: 0 10px
 		font: 13px Arial, sans-serif
 	i
 		position: absolute
 		bottom: 0
-		left: -10px 
+		left: -10px
 		width: 21px
 		height: 19px
 		background: url(../img/home.png) no-repeat
@@ -22,14 +22,14 @@
 	+clr
 .sidebar__top
 	position: relative
-	padding: 0 15px 0 10px 
-	margin: 0px 10px 0 8px 
+	padding: 0 15px 0 10px
+	margin: 0px 10px 0 8px
 	border: 1px solid #F4F4F4
-	background: #FBFBFB 
+	background: #FBFBFB
 	+box-shadow(0 2px 4px rgba(0,0,0,.18))
 	+clr
 	a
-		color: #1a1a1b 
+		color: #1a1a1b
 		text-decoration: none
 	form
 		margin: 10px 0 15px 0
@@ -38,43 +38,43 @@
 	padding: 10px 0 10px 0
 	font-weight: bold
 	position: relative
-	border-bottom: 1px solid #F4F4F4 
+	border-bottom: 1px solid #F4F4F4
 	&:after
 		content: ""
 		position: absolute
 		top: 14px
-		right: 0px 
+		right: 0px
 		+arr(8,6,#1a1a1b,b)
 .sidebar__sort-filter
-	margin-bottom: 30px 
+	margin-bottom: 30px
 .checkbox
 	display: block
-	z-index: 2 
+	z-index: 2
 	input
 		position: absolute
 		left: 0
 		top: 0
 		z-index: 2
-		opacity: 0 
+		opacity: 0
 		&:checked
 			+ span
-				font-weight: bold 
+				font-weight: bold
 				+ no-select
 				&:after
 					content: ""
 					position: absolute
 					top: 12px
 					left: 1px
-					z-index: 5 
+					z-index: 5
 					+s(checked)
 		&:disabled
 			+ span
-				opacity: .4 
+				opacity: .4
 	span
 	position: relative
-	top: 0 
-	left: 0 
-	padding: 10px 0 0 28px 
+	top: 0
+	left: 0
+	padding: 10px 0 0 28px
 	&:before
 		content: ""
 		position: absolute
@@ -83,25 +83,25 @@
 		width: 12px
 		height: 12px
 		border: 1px solid #adadad
-		background: #FFF 
+		background: #FFF
 		+border-radius(2px)
 	&:after
 		content: ""
 		position: absolute
-		top: 3px 
+		top: 3px
 		left: 0
 		background: url(..img/checked-icon.png)
 	sup
 		position: relative
 		top: -5px
-		margin-left: 3px 
+		margin-left: 3px
 		font-size: 10px
 .sidebar__produce
 	margin: 7px 13px 0px 10px
 	&:active
-		font-weight: bold 
+		font-weight: bold
 	sup
-		font-size: 10px 
+		font-size: 10px
 	a
 		text-decoration: none
 		margin: 5px 2px 5px 10px
@@ -109,27 +109,27 @@ a.sidebar__all
 	display: inline-block
 	margin: 15px 0 10px 35px
 	border-bottom: 1px dotted $blue
-	color: $blue  
+	color: $blue
 .sidebar__price
 	margin: 15px auto
 	input
 		height: 28px
-		width: 65px
+		width: 64px
 		border: 2px solid #d0d0d0
 		padding: 0 7px
-		color: #7c7c7c 
+		color: #7c7c7c
 		font-size: 13px
 		font-weight: bold
 		display: inline-block
 	li:nth-child(2n)
-		width: 65px 
-		border: 2px solid #d0d0d0 
-		padding: 5px  
+		width: 65px
+		border: 2px solid #d0d0d0
+		padding: 5px
 .sidebar__fromto
 	position: relative
 	height: 5px
-	margin-bottom: 50px 
-	background: #eee 
+	margin-bottom: 50px
+	background: #eee
 	+background-image(linear-gradient(top, #cccccc 0%, #eeeeee 100%))
 	+border-radius(3px)
 	&:before,
@@ -143,19 +143,19 @@ a.sidebar__all
 	&:before
 		left: 90px
 	&:after
-		right: 20px 
+		right: 20px
 .sidebar__fromto-tune
 	position: absolute
 	width: 70px
 	height: 5px
 	bottom: 0
 	right: 30px
-	background: $yellow 
+	background: $yellow
 .sidebar__reclame
 	display: block
-	margin: 25px 10px 0 8px 
-	height: 310px 
-	background-color: #F0F0F0 
+	margin: 25px 10px 0 8px
+	height: 310px
+	background-color: #F0F0F0
 	border: 1px solid #c7c7c7
 	overflow: hidden
 	+box-shadow(0 5px 10px rgba(255,255,255,.8))
@@ -169,27 +169,27 @@ a.sidebar__all
 	position: relative
 	float: right
 	width: 778px
-	margin-bottom: 49px 
+	margin-bottom: 49px
 	+clr
 .main__name
 	text-transform: uppercase
-	padding: 10px 30px 10px 15px 
-	background: $yellow 
+	padding: 10px 30px 10px 15px
+	background: $yellow
 	float: left
-	color: #FFF 
+	color: #FFF
 	+clr
 .main__wrap
 	position: relative
 	border: 1px solid #efefef
-	border-top: none 
-	margin-top: 43px 
+	border-top: none
+	margin-top: 43px
 
 
 // cat__top
 
 
 .cat__top
-	background: #FBFBFB 
+	background: #FBFBFB
 	height: 40px
 	+clr
 .cat__left
@@ -207,62 +207,62 @@ a.sidebar__all
 		right: 0
 		width: 1px
 		height: 25px
-		background: #e5e5e5 
+		background: #e5e5e5
 	form
 		float: left
 	span
-		color: #525253 
+		color: #525253
 		float: right
 		margin: 12px 13px 13px 0
 	p
 		position: absolute
-		right: 14px 
+		right: 14px
 		top: 13px
 		display: inline
-		color: #fff 
-		background: #747475 
+		color: #fff
+		background: #747475
 		padding: 2px
-		margin-left: 7px 
+		margin-left: 7px
 a.cat__link,
-	margin: 0 37px 0 13px 
+	margin: 0 37px 0 13px
 a.cat__link,
 a.cat__link-expensive
 	color: $blue
-	text-decoration: none 
+	text-decoration: none
 	border-bottom: 1px dotted
-	line-height: 40px 
+	line-height: 40px
 	&:hover
-		border-bottom: none 
+		border-bottom: none
 .goods_on_page
 	position: relative
 	margin: 10px 5px 10px 10px
-	background: #747475 
+	background: #747475
 	border: 1px solid #fbfbfb
-	color: $white 
-	z-index: 2 
+	color: $white
+	z-index: 2
 	&:after
 		content: ""
 		position: absolute
 		top: 14px
-		right: 0px 
-		z-index: 4 
+		right: 0px
+		z-index: 4
 		+arr(8,6,red,b)
 a.cat__link-expensive
-	margin: 0 24px 0 13px 
+	margin: 0 24px 0 13px
 	&:after
 		content: ""
 		position: absolute
 		top: 20px
-		right: 15px 
+		right: 15px
 		+arr(6,4,$blue,b)
 .cat__type
 	padding: 6px
 .cat__gride,
 .cat__list--is-active
-	border: 1px solid #e4e4e4 
-	width: 26px 
+	border: 1px solid #e4e4e4
+	width: 26px
 	height: 25px
-	display: inline-block 
+	display: inline-block
 	background-color: #eee
 	+box-shadow(inset 0 2px 3px rgba(0,0,0,.16))
 	img
@@ -275,7 +275,7 @@ a.cat__link-expensive
 
 .l-catalog
 	position: relative
-	border-bottom: 1px solid #efefef 
+	border-bottom: 1px solid #efefef
 	display: block
 	z-index: 2
 	&:hover
@@ -283,35 +283,35 @@ a.cat__link-expensive
 	+clr
 .l-catalog__img
 	position: relative
-	padding-top: 17px 
+	padding-top: 17px
 	width: 200px
-	height: auto 
+	height: auto
 	overflow: hidden
 	float: left
 	text-align: center
-	z-index: 3 
+	z-index: 3
 	a
 		display: block
 	img
 		margin: auto
 		max-width: 90%
-		height: auto 
+		height: auto
 		-webkit-transition: all 0.2s linear
 		-moz-transition: all 0.2s linear
 		-ms-transition: all 0.2s linear
 		-o-transition: all 0.2s linear
 		transition: all 0.2s linear
 		&:hover
-			-webkit-transform: scale(1.1) 
-			-moz-transform: scale(1.1) 
-			-ms-transform: scale(1.1) 
-			-o-transform: scale(1.1) 
-			transform: scale(1.1) 
+			-webkit-transform: scale(1.1)
+			-moz-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			-o-transform: scale(1.1)
+			transform: scale(1.1)
 
 
 .l-catalog__main
-	width: 343px 
-	padding: 17px 0 20px 20px 
+	width: 343px
+	padding: 17px 0 20px 20px
 	border-left: 1px solid #efefef
 	float: left
 	+clr
@@ -323,20 +323,20 @@ a.cat__link-expensive
 	width: 165px
 	height: 95px
 	margin: 40px 29px 0 0
-	padding-left: 17px 
+	padding-left: 17px
 	float: right
 	border-left: 1px solid #efefef
 	+clr
 .price__wrap
 	margin: 5px 0
 	width: 100%
-	height: 13px 
+	height: 13px
 	float: left
 	+clr
 	a
 		margin-right: 4px
 		text-decoration: none
-		color: $grey 
+		color: $grey
 		border-bottom: 1px dotted $grey
 		&:hover
 			color: $blue
@@ -344,20 +344,20 @@ a.cat__link-expensive
 
 .pages
 	background: #FBFBFB
-	height: 45px 
+	height: 45px
 	a
 		color: $blue
 		text-decoration: none
 		border-bottom: 1px solid $blue
-		margin-right: 13px 
-		line-height: 45px 
+		margin-right: 13px
+		line-height: 45px
 		&:hover
 			border-bottom: none
 a.pages__back
 	margin: 0  255px 0 20px
 	text-transform: lowercase
 a.not-active
-	color: #D8D8D8 
+	color: #D8D8D8
 	cursor: default
 	border-bottom-color: #D8D8D8
 	&:hover
@@ -367,7 +367,7 @@ a.pages__is-active
 	border-bottom: none
 	padding: 9px 9px 5px 9px
 .pages__next
-	margin-left: 240px 
+	margin-left: 240px
 	text-transform: lowercase
 
 .main__baner-reclame
@@ -376,15 +376,15 @@ a.pages__is-active
 	margin: 49px 0 43px 0
 
 .prod__wrap
-	width: 100% 
+	width: 100%
 	height: auto
 	+clr
 .prod__item
 	border-bottom: 2px solid $yellow
-	margin-top: 43px 
+	margin-top: 43px
 .main__baner-img
-	width: 1028px 
-	height: 100% 
+	width: 1028px
+	height: 100%
 
 .prod__list
 	position: relative
@@ -395,19 +395,19 @@ a.pages__is-active
 	width: 19.8%
 	&:hover
 		+box-shadow(0 0 7px rgba(0,49,82,.25))
-		z-index: 11 
+		z-index: 11
 		.prod__top
 			border-bottom: 1px solid #fff
-			z-index: 11 
+			z-index: 11
 		.prod__bottom
 			display: block
 			+box-shadow(0 4px 7px rgba(0,49,82,.25))
 		.catalog__image
-			-webkit-transform: scale(1.1) 
-			-moz-transform: scale(1.1) 
-			-ms-transform: scale(1.1) 
-			-o-transform: scale(1.1) 
-			transform: scale(1.1) 
+			-webkit-transform: scale(1.1)
+			-moz-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			-o-transform: scale(1.1)
+			transform: scale(1.1)
 .prod__top
 	position: relative
 	border-bottom: 1px solid #f4f4f4
@@ -418,10 +418,10 @@ a.pages__is-active
 .catalog__price-wrap
 	float: none
 	display: inline-block
-	padding: 10px 15px 13px 
+	padding: 10px 15px 13px
 	text-align: center
 	.star
-		top: 5px 
+		top: 5px
 		float: none
 		text-align: center
 .item__price
@@ -430,30 +430,30 @@ a.pages__is-active
 	min-width: 85px
 	padding: 5px 44px 5px 10px
 	border: 2px solid $yellow
-	margin: 0 auto 
+	margin: 0 auto
 	color: $grey
 	font: 24px bold
 	text-decoration: none
 	+clr
 	&:hover
-		opacity: .6 
+		opacity: .6
 	sub
-		font-size: 11px 
+		font-size: 11px
 	img
 		position: absolute
 		top: 0
-		right: -2px 
+		right: -2px
 .prod__bottom
 	display: none
 	position: absolute
 	top: 258px
-	left: 0 
+	left: 0
 	text-align: center
-	background: #FFF 
+	background: #FFF
 	padding-top: 15px
-	z-index: 10  
+	z-index: 10
 
-// info ___ 
+// info ___
 
 .info__wrap
 	position: relative
@@ -461,18 +461,18 @@ a.pages__is-active
 	height: auto
 	+clr
 .info
-	margin-left: 20px 
+	margin-left: 20px
 	width: 31%
 	float: left
 	&:last-child
-		margin-right: 0 
+		margin-right: 0
 	p
-		margin-top: 13px 
+		margin-top: 13px
 .info__item
-	border-bottom: 1px solid $yellow 
-	padding-bottom: 10px 
+	border-bottom: 1px solid $yellow
+	padding-bottom: 10px
 .info__heading
-	padding: 10px 
-	margin-bottom: 13px 
+	padding: 10px
+	margin-bottom: 13px
 	background-color: $yellow
 	display: inline

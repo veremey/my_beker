@@ -1,6 +1,6 @@
 .prod
 	position: relative
-	margin-top: 60px 
+	margin-top: 60px
 	+clr
 	li
 		display: inline-block
@@ -11,23 +11,23 @@
 
 .ball
 	height: 17px
-	width: 80px 
+	width: 80px
 	float: right
 	margin-top: -30px
-	
+
 .ball__link
 	display: block
-	-webkit-border-radius: 50% 
-	border-radius: 50% 
-	border: 1px solid #525253 
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	border: 1px solid #525253
 	float: left
-	width: 10px 
-	height: 10px 
-	margin: 1px 
+	width: 10px
+	height: 10px
+	margin: 1px
 	&:hover
 		background: #525253
 .is-active
-	background: #525253 
+	background: #525253
 .prod__goods
 	position: relative
 	background: $yellow
@@ -37,8 +37,8 @@
 
 
 .prod__link
-	margin: 10px 
-	border: 1px solid $grey 
+	margin: 10px
+	border: 1px solid $grey
 	&:hover
 		background: $grey
 	a
@@ -52,12 +52,12 @@
 .catalog
 	position: relative
 	overflow: hidden
-	width: auto 
+	width: auto
 .catalog__item
 	border: 1px solid // ???
 	border-color: rgb(247,247,247) //???
 	float: left
-	max-width: 25% 
+	max-width: 25%
 	height: 285px
 	max-height: 285px
 	border-right: none
@@ -65,37 +65,37 @@
 	&:last-child
 		border-right: 1px solid//???
 		border-color: rgb(247,247,247) //????
-	&:hover 
+	&:hover
 		.catalog__heading a
-			color: #1b4792 
+			color: #1b4792
 		.image__goods
-			-webkit-transform: scale(1.1) 
-			-moz-transform: scale(1.1) 
-			-ms-transform: scale(1.1) 
-			-o-transform: scale(1.1) 
-			transform: scale(1.1) 
-			-webkit-transition: all .2s linear 
-			-moz-transition: all .2s linear 
-			-ms-transition: all .2s linear 
-			-o-transition: all .2s linear 
-			transition: all .2s linear 
+			-webkit-transform: scale(1.1)
+			-moz-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			-o-transform: scale(1.1)
+			transform: scale(1.1)
+			-webkit-transition: all .2s linear
+			-moz-transition: all .2s linear
+			-ms-transition: all .2s linear
+			-o-transition: all .2s linear
+			transition: all .2s linear
 
 .catalog__lot
 	display: block
 	font-size: 15px
 	color: $blue
-	padding: 10px 
+	padding: 10px
 
 .catalog__image
 	display: block
-	width: 100% 
+	width: 100%
 	height: auto
 	vertical-align: middle
 	overflow: hidden
 
 .catalog__buy
 	padding: 12px 10px
-	background: #fbfbfb 
+	background: #fbfbfb
 	height: auto
 	+clr
 
@@ -106,28 +106,28 @@
 	min-width: 85px
 	padding: 5px 44px 5px 10px
 	border: 2px solid $yellow
-	margin: 0 auto 
+	margin: 0 auto
 	color: $grey
 	font: 24px bold
 	text-decoration: none
 	+clr
 	&:hover
-		opacity: .6 
+		opacity: .6
 	sub
-		font-size: 11px 
+		font-size: 11px
 	img
 		position: absolute
 		top: 0
-		right: -2px 
+		right: -2px
 
 .catalog__add
 	float: right
 	+clr
 	a
 		text-decoration: none
-		border-bottom: 1px dotted $grey 
+		border-bottom: 1px dotted $grey
 		color: $grey
-		margin: 5px 0 0 0 
+		margin: 5px 0 0 0
 		&:hover
 			color: $blue
 			border-bottom: none
@@ -143,30 +143,30 @@ a.star
 	span
 		font-size: 11px
 		color: #525253
-		
+
 
 .border
-	border: 2px solid $yellow 
+	border: 2px solid $yellow
 	.catalog__item
 		&:last-child
-			border-right: none 
+			border-right: none
 
 // END CATALOG
 
 .baner
-	margin: 30px 0 
+	margin: 30px 0
 	display: block
 
 		//  down
 
 .down
 	background: #f6f6f6
-	height: 335px 
-	padding-bottom: 40px  
+	height: 335px
+	padding-bottom: 40px
 	+clr
 	a
 		text-decoration: none
-		color: $dark 
+		color: $dark
 
 .down__layout-left
 	position: relative
@@ -186,46 +186,45 @@ a.star
 		font: 13px bold sans-serif
 		padding: 2px
 		margin: 0px 10px
-		line-height: 33px 
-		border-bottom: 1px dotted $grey 
+		line-height: 33px
+		border-bottom: 1px dotted $grey
 		&:hover
-			background: $yellow 
-			border-bottom: none 
+			background: $yellow
+			border-bottom: none
 
 .down__content
-	padding: 20px 0 
+	padding: 20px 0
 	border-bottom: 1px solid #c5c5cb
 	a:hover
-		color: $blue 
+		color: $blue
 	img
 		float: left
-		margin-right: 15px 
-		-webkit-border-radius: 50% 
-		border-radius: 50% 
+		margin-right: 15px
+		-webkit-border-radius: 50%
+		border-radius: 50%
 		+clr
 	&:hover
 		.content__item a
-			color: $blue 
+			color: $blue
 		img
-			opacity: .7 
+			opacity: .7
 
-.content__item 
+.content__item
 	margin: 0 10px
 	li:first-child
 		margin: 5px 0
 	a
-		color: $grey 
+		color: $grey
 
 .down__content-all
-	display: block
-	width: 75px 
-	margin: 20px 0 0 80px 
+	display: inline-block
+	margin: 20px 0 0 80px
 	font: 13px bold sans-serif
-	border-bottom: 1px solid $grey 
+	border-bottom: 1px solid $grey
 	&:hover
-		color: $blue 
+		color: $blue
 		border-bottom: 1px solid transparent
-		background: $yellow 
+		background: $yellow
 
 .down__layout-right
 	float: right
@@ -234,7 +233,7 @@ a.star
 .down__item-right
 	padding: 30px 0
 	a:hover
-		color: $blue 
+		color: $blue
 
 
 // START   FOOTER
