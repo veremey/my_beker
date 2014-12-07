@@ -59,7 +59,10 @@ a.example__link:hover { border-bottom: none; }
 
 .header__call { float: left; position: relative; margin-right: 30px; *zoom: 1; }
 .header__call:after { content: " "; display: table; clear: both; }
-.header__call li { font-weight: bold; }
+.header__call li { margin-bottom: 3px; }
+.header__call li:last-child { margin-bottom: 0; }
+.header__call li a { font-weight: bold; color: white; text-decoration: none; }
+.header__call li a:hover { border-bottom: 1px dotted white; }
 .header__call i { position: absolute; right: 110px; top: 0; background: url('../img/icons-s64bea07888.png') 0 -1374px no-repeat; width: 42px; height: 42px; }
 
 .header__basket { position: relative; float: right; *zoom: 1; }

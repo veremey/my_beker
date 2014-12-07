@@ -42,7 +42,7 @@ body
 	height: 30px
 	padding-left: 10px
 	width: 294px
-	font-weight: bold 
+	font-weight: bold
 
 .header__search-example
 	font-size: 11px
@@ -51,10 +51,10 @@ body
 		display: inline
 		margin-right: 5px
 a.example__link
-	font-size: 11px 
+	font-size: 11px
 	border-bottom: 1px dotted $blue
 	color: $blue
-	text-decoration: none 
+	text-decoration: none
 	&:hover
 		border-bottom: none
 
@@ -72,39 +72,47 @@ a.example__link
 	margin-right: 30px
 	+clr
 	li
-		font-weight: bold 
+		margin-bottom: 3px
+		&:last-child
+			margin-bottom: 0
+		a
+			font-weight: bold
+			color: #FFF
+			text-decoration: none
+			&:hover
+				border-bottom: 1px dotted #fff
 	i
 		position: absolute
 		right: 110px
 		top: 0
 		+s(phone)
-.header__basket 
+.header__basket
 	position: relative
 	float: right
 	+clr
 	span
 		position: absolute
 		top: 0
-		left: -55px 
+		left: -55px
 .basket__wrap
 	float: right
-	margin-left: 67px 
+	margin-left: 67px
 
 .basket__amount
 	position: relative
 	display: block
 	+s(basket)
 	i
-		background: #940c1a 
-		+border-radius (50%) 
+		background: #940c1a
+		+border-radius (50%)
 		color: $white
-		font-size: 13px 
+		font-size: 13px
 		height: 20px
-		padding-top: 2px 
+		padding-top: 2px
 		position: absolute
-		right: -5px 
+		right: -5px
 		text-align: center
-		text-decoration: none 
+		text-decoration: none
 		top: 0px
 		width: 20px
 
@@ -114,19 +122,19 @@ a.example__link
 
 
 .header__up
-	background-color: rgba(0,0,0, .4) 
+	background-color: rgba(0,0,0, .4)
 	border: 2px solid transparent
-	color: #FFF 
+	color: #FFF
 	font-size: 11px
 	height: 35px
 	position: absolute
 	top: 0px
 	left: 0
-	right: 0 
-	z-index: 3 
+	right: 0
+	z-index: 3
 	li
 		display: inline-block
-		line-height: 35px 
+		line-height: 35px
 	a
 		border: 2px solid transparent
 		color: $yellow
@@ -135,14 +143,14 @@ a.example__link
 		padding: 4px
 		&:hover
 			border: 2px solid $yellow
-			text-decoration: none 
+			text-decoration: none
 		&:first-child
-			margin-left: 0px 
+			margin-left: 0px
 			padding-left: 0
 .header__up-menu
 	float: left
 
-.header__up-enter 
+.header__up-enter
 	float: right
 	a
 		color: $blue
@@ -155,8 +163,8 @@ a.example__link
 	background: $darkgrey
 	bottom: 0
 	right: 0
-	left: 0 
-	font-weight: bold  
+	left: 0
+	font-weight: bold
 .header__menu-item
 	float: left
 	position: relative
@@ -175,25 +183,25 @@ a.example__link
 	&:hover
 		background: $yellow
 		color: $dark
-		z-index: 500 
+		z-index: 500
 		&:after,
 		&:before
-			display: none 
+			display: none
 		.header__menu-down
 			display: block
 	&:first-child
 		&:after,
 		&:before
 			content: ""
-			display: none 
+			display: none
 .header__menu-link
 	color: $white
 	position: relative
 	display: block
-	font-size: 13px 
-	line-height: 55px 
+	font-size: 13px
+	line-height: 55px
 	padding: 0px 17px
-	margin: 0 -1px 
+	margin: 0 -1px
 	text-decoration: none
 	&:hover
 		color: $grey
@@ -205,35 +213,35 @@ a.example__link
 	border: 3px solid $yellow
 	position: absolute
 	top: 55px
-	left: 0 
-	z-index: 9 
+	left: 0
+	z-index: 9
 .sub__menu
 	position: relative
-	padding: 0 0 27px 0 
-	font-size: 0 
+	padding: 0 0 27px 0
+	font-size: 0
 	float: left
 	z-index: 9
-	-ms-word-wrap: nowrap 
-	word-wrap: nowrap 
+	-ms-word-wrap: nowrap
+	word-wrap: nowrap
 
 .sub__menu-item
 	margin: 0 0 5px 25px
-	padding: 0 
+	padding: 0
 	&:first-child
-		margin-top: 25px 
+		margin-top: 25px
 .sub__menu-heading
-	font-size: 13px 
-	font-weight: bold 
-	margin: 25px 0 15px 0 
-	z-index: 9 
+	font-size: 13px
+	font-weight: bold
+	margin: 25px 0 15px 0
+	z-index: 9
 .sub__menu-link
-	font-size: 12px 
-	font-weight: normal 
+	font-size: 12px
+	font-weight: normal
 	color: $blue
-	padding: 0 
+	padding: 0
 	text-decoration: none
-	border-bottom: 1px solid $blue 
-	z-index: 9 
+	border-bottom: 1px solid $blue
+	z-index: 9
 	&:hover
 		border-bottom: none
 
@@ -243,10 +251,10 @@ a.example__link
 // FOOTER
 
 .footer
-	background-color: $dark 
-	height: 300px 
+	background-color: $dark
+	height: 300px
 	position: relative
-	bottom: 0 
+	bottom: 0
 	+clr
 
 .footer__wrap
@@ -261,19 +269,19 @@ a.example__link
 .footer__heading
 	color: $white
 	padding: 10px 0
-	border-bottom: 1px solid $yellow 
+	border-bottom: 1px solid $yellow
 
 .left
 	float: left
-	padding: 10px 20px 0 0 
+	padding: 10px 20px 0 0
 .right
 	float: right
 	padding: 10px 35px 0 0
 
 .footer__link
 	position: relative
-	padding: 5px 0 
-	color: $white 
+	padding: 5px 0
+	color: $white
 	a
 		color: $yellow
 		&:hover
@@ -290,7 +298,7 @@ a.example__link
 	display: block
 	position: absolute
 	top: 5px
-	left: -25px  
+	left: -25px
 .office
 	+s(f_nav)
 .tel
@@ -327,26 +335,26 @@ a.example__link
 		+s(g_h)
 
 .license
-	border-top: 1px solid #2E2E2F 
+	border-top: 1px solid #2E2E2F
 	position: relative
-	color: $grey 
+	color: $grey
 	float: left
 	padding: 20px 0 0 55px
 	i
 		position: absolute
 		top: 10px
-		left: 0px 
+		left: 0px
 		+s(f_bekker)
 
 .design
-	border-top: 1px solid #2E2E2F 
+	border-top: 1px solid #2E2E2F
 	position: relative
 	width: 200px
-	color: $grey 
+	color: $grey
 	float: right
-	padding: 18px 0px 0 60px 
+	padding: 18px 0px 0 60px
 	i
 		position: absolute
 		top: 25px
-		left: 0 
+		left: 0
 		+s(sd)
