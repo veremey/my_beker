@@ -1,18 +1,97 @@
 // Normally mainpage styles
 
+.big-slider
+	position: relative
+	//height: 361px
+	//background: $yellow url(../img/slider-bg.jpg) 0 0 repeat-x
+	+background-size(100%,100%)
+	.cycle-slideshow
+		height: 100%
+.big-slider__item
+	position: relative
+	width: 100%
+	height: 361px
+	+clr
+	img
+		position: absolute
+		top: 0
+		right: 0
+	p
+		margin: 14px 0 0 22px
+		+med
+		font-size: 18px
+	.l-container
+		position: relative
+		z-index: 2
+.big-slider__title-wrap
+	display: inline-block
+	margin-top: 90px
+	padding: 15px 35px 15px 20px
+	background: #000
+	color: $yellow
+	+med
+	font-size: 18px
+.big-slider__title
+	margin-top: 5px
+	+bold
+	font-size: 36px
+	font-weight: normal
+.big-slider__nav
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	.l-container
+		position: relative
+		height: 100%
+		z-index: 400
+.big-slider__prev,
+.big-slider__next
+	position: absolute
+	top: 50%
+	margin-top: -32px
+	+transition(all .2s linear)
+	&:hover
+		+opacity(.5)
+.big-slider__prev
+	left: 0
+	+s(arr1)
+.big-slider__next
+	right: 0
+	+s(arr2)
+
+.big-slider__wrap
+	padding-left: 65px
+
+.big-slider__bg
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	text-align: center
+	img
+		display: block
+		width: 100%
+		height: 100%
+
+
+// my
+//################
 .slider
 	max-height: 360px
-	background: $yellow 
+	background: $yellow
 .slider__wrap
-	height: 360px 
+	height: 360px
 	cursor: pointer
-	height: 100% 
+	height: 100%
 .slider__spin
 	position: absolute
-	height: 100% 
+	height: 100%
 	top: 0
 	left: 0
-	z-index: 4 
+	z-index: 4
 	&:before
 		content: ""
 		position: absolute
@@ -29,35 +108,35 @@
 		font: 18px bold, sans-serif
 		position: absolute
 		top: 250px
-		left: 60px 
+		left: 60px
 
 .slider__commodity
 	width: 435px
 	position: relative
 	top: 120px
-	left: 45px  
-	background: #000 
+	left: 45px
+	background: #000
 	a
 		display: inline-block
 		color: $yellow
-		text-decoration: none 
+		text-decoration: none
 		padding: 20px 0 0 25px
 		font: 18px bold, sans-serif
 .slider__heading
 	color: $yellow
-	padding: 20px 
+	padding: 20px
 
 .slider__spin-img
 	position: absolute
 	top: 30px
 	left: 570px
-	z-index: 1 
+	z-index: 1
 
 .slider__bg
 	position: relative
 	width: 100%
-	height: 100%  
-	z-index: 2 
+	height: 100%
+	z-index: 2
 
 	// end slider
 
@@ -68,7 +147,7 @@
 
 .reclame
 	position: relative
-	margin: 30px 0 
+	margin: 30px 0
 	+s(showroom)
 .reclame__poster
 	position: absolute
@@ -78,10 +157,10 @@
 	height: 50px
 	background: #000
 	color: #fff
-	font-size: 26px 
+	font-size: 26px
 	margin: 5px 0
 	&:hover
-		opacity: .7 
+		opacity: .7
 	a
 		display: block
 		text-decoration: none
@@ -89,4 +168,4 @@
 		padding: 10px 30px
 	span
 		text-transform: uppercase
-		font-weight: bold 
+		font-weight: bold
