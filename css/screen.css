@@ -429,7 +429,7 @@ a.star span { font-size: 11px; color: #525253; }
 
 .down__layout { padding: 20px 0; border-bottom: 3px solid #969696; height: 30px; }
 .down__layout .down__heading { float: left; line-height: 33px; }
-.down__layout a { font: 13px bold sans-serif; padding: 2px; margin: 0px 10px; line-height: 33px; border-bottom: 1px dotted #464646; }
+.down__layout a { font: 13px bold, sans-serif; padding: 2px; margin: 0px 10px; line-height: 33px; border-bottom: 1px dotted #464646; }
 .down__layout a:hover { background: #f8eb01; border-bottom: none; }
 
 .down__content { padding: 20px 0; border-bottom: 1px solid #c5c5cb; }
@@ -443,7 +443,7 @@ a.star span { font-size: 11px; color: #525253; }
 .content__item li:first-child { margin: 5px 0; }
 .content__item a { color: #464646; }
 
-.down__content-all { display: inline-block; margin: 20px 0 0 80px; font: 13px bold sans-serif; border-bottom: 1px solid #464646; }
+.down__content-all { display: inline-block; margin: 20px 0 0 80px; font: 13px bold, sans-serif; border-bottom: 1px solid #464646; }
 .down__content-all:hover { color: #0185c6; border-bottom: 1px solid transparent; background: #f8eb01; }
 
 .down__layout-right { float: right; width: 425px; }
