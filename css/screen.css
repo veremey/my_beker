@@ -386,10 +386,19 @@ a.main__baner { display: inline-block; width: 1028px; height: auto; overflow: hi
 .ball__link { display: block; -webkit-border-radius: 50%; border-radius: 50%; border: 1px solid #525253; background-color: #ececec; float: left; width: 10px; height: 10px; margin-left: 5px; }
 .ball__link:hover { background: #525253; }
 
-.catalog { position: relative; overflow: hidden; width: auto; }
+.catalog { position: relative; width: auto; height: 287px; *zoom: 1; }
+.catalog:after { content: " "; display: table; clear: both; }
 
-.catalog__item { border: 1px solid; border-color: #f7f7f7; float: left; max-width: 25%; height: 285px; max-height: 285px; border-right: none; margin-left: -1.5px; }
-.catalog__item:last-child { border-right: 1px solid; border-color: #f7f7f7; }
+.btn__prev, .btn__next { position: absolute; top: 50%; }
+
+.btn__prev { left: -20px; background: url('../img/icons-sd997d36441.png') 0 -148px no-repeat; width: 12px; height: 21px; }
+
+.btn__next { right: -20px; background: url('../img/icons-sd997d36441.png') 0 -179px no-repeat; width: 12px; height: 21px; }
+
+.catalog__wrap { position: relative; overflow: hidden; }
+
+.catalog__item { border: 1px solid #f7f7f7; float: left; max-width: 255px; height: 285px; max-height: 285px; border-right: none; }
+.catalog__item:last-child { border-right: 1px solid #f7f7f7; }
 .catalog__item:hover .catalog__heading a { color: #1b4792; }
 .catalog__item:hover .image__goods { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 

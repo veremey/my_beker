@@ -52,20 +52,32 @@
 
 .catalog
 	position: relative
-	overflow: hidden
 	width: auto
+	height: 287px
+	+clr
+.btn__prev,
+.btn__next
+	position: absolute
+	top: 50%
+.btn__prev
+	left: -20px
+	+s(arr3)
+.btn__next
+	right: -20px
+	+s(arr4)
+.catalog__wrap
+	position: relative
+	overflow: hidden
+
 .catalog__item
-	border: 1px solid // ???
-	border-color: rgb(247,247,247) //???
+	border: 1px solid #f7f7f7
 	float: left
-	max-width: 25%
+	max-width: 255px
 	height: 285px
 	max-height: 285px
 	border-right: none
-	margin-left: -1.5px
 	&:last-child
-		border-right: 1px solid//???
-		border-color: rgb(247,247,247) //????
+		border-right: 1px solid #f7f7f7
 	&:hover
 		.catalog__heading a
 			color: #1b4792
