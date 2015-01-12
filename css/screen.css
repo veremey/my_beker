@@ -370,22 +370,21 @@ a.main__baner { display: inline-block; width: 1028px; height: auto; overflow: hi
 
 .prod { position: relative; margin-top: 60px; *zoom: 1; }
 .prod:after { content: " "; display: table; clear: both; }
-.prod li { display: inline-block; }
-.prod li a { text-decoration: none; color: black; font-weight: bold; }
+.prod li a { text-decoration: none; color: black; display: block; font-weight: bold; }
+.prod li .is-active { font-family: "pf_dindisplay_probold", "arial narrow", sans-serif; font-size: 20px; padding: 15px 20px; }
 
-.ball { height: 17px; width: 80px; float: right; margin-top: -30px; }
+.prod__goods { position: relative; background: #f8eb01; color: black; display: inline-block; }
 
-.ball__link { display: block; -webkit-border-radius: 50%; border-radius: 50%; border: 1px solid #525253; float: left; width: 10px; height: 10px; margin: 1px; }
-.ball__link:hover { background: #525253; }
-
-.is-active { background: #525253; }
-
-.prod__goods { position: relative; background: #f8eb01; color: black; padding: 15px 20px; display: inline-block; }
-
-.prod__link { margin: 10px; border: 1px solid #464646; }
+.prod__link { margin-left: 10px; border: 1px solid #464646; display: inline-block; }
 .prod__link:hover { background: #464646; }
 .prod__link a { display: block; padding: 5px; }
 .prod__link a:hover { color: white; }
+
+.ball { height: 17px; width: 80px; float: right; margin-top: -30px; }
+.ball .is-active { background: #525253; }
+
+.ball__link { display: block; -webkit-border-radius: 50%; border-radius: 50%; border: 1px solid #525253; background-color: #ececec; float: left; width: 10px; height: 10px; margin-left: 5px; }
+.ball__link:hover { background: #525253; }
 
 .catalog { position: relative; overflow: hidden; width: auto; }
 
@@ -405,7 +404,7 @@ a.main__baner { display: inline-block; width: 1028px; height: auto; overflow: hi
 .catalog__price:after { content: " "; display: table; clear: both; }
 .catalog__price:hover { opacity: 0.6; }
 .catalog__price sub { font-size: 11px; }
-.catalog__price img { position: absolute; top: 0; right: -2px; }
+.catalog__price img { position: absolute; top: -2px; right: -2px; }
 
 .catalog__add { float: right; *zoom: 1; }
 .catalog__add:after { content: " "; display: table; clear: both; }

@@ -3,42 +3,24 @@
 	margin-top: 60px
 	+clr
 	li
-		display: inline-block
 		a
 			text-decoration: none
 			color: #000
+			display: block
 			font-weight: bold
-
-.ball
-	height: 17px
-	width: 80px
-	float: right
-	margin-top: -30px
-
-.ball__link
-	display: block
-	-webkit-border-radius: 50%
-	border-radius: 50%
-	border: 1px solid #525253
-	float: left
-	width: 10px
-	height: 10px
-	margin: 1px
-	&:hover
-		background: #525253
-.is-active
-	background: #525253
+		.is-active
+			+bold
+			font-size: 20px
+			padding: 15px 20px
 .prod__goods
 	position: relative
 	background: $yellow
 	color: #000
-	padding: 15px 20px
 	display: inline-block
-
-
 .prod__link
-	margin: 10px
+	margin-left: 10px
 	border: 1px solid $grey
+	display: inline-block
 	&:hover
 		background: $grey
 	a
@@ -46,6 +28,25 @@
 		padding: 5px
 		&:hover
 			color: $white
+.ball
+	height: 17px
+	width: 80px
+	float: right
+	margin-top: -30px
+	.is-active
+		background: #525253
+.ball__link
+	display: block
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	border: 1px solid #525253
+	background-color: #ECECEC
+	float: left
+	width: 10px
+	height: 10px
+	margin-left: 5px
+	&:hover
+		background: #525253
 
 // CATALOG
 
@@ -117,7 +118,7 @@
 		font-size: 11px
 	img
 		position: absolute
-		top: 0
+		top: -2px
 		right: -2px
 
 .catalog__add
