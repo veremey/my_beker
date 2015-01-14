@@ -275,11 +275,11 @@
 				Скидки</a>
 			</li>
 		</ul>
-		<div class="ball">
-			<a href="#" class="ball__link is-active"></a>
-			<a href="#" class="ball__link"></a>
-			<a href="#" class="ball__link"></a>
-			<a href="#" class="ball__link"></a>
+		<div class="ball js-pager">
+			<button class="is-active"></button>
+			<button ></button>
+			<button ></button>
+			<button ></button>
 		</div>
 	</div>
 <!-- end prod head -->
@@ -293,7 +293,10 @@
 		data-cycle-timeout="0"
 		data-cycle-prev=".js-prev"
 		data-cycle-next=".js-next"
-		data-cycle-slides=".js-catalog__slige">
+		data-cycle-slides=".js-catalog__slige"
+		data-cycle-carousel-visible=4
+		data-cycle-pager-active-class="is-active"
+		data-cycle-pager-template="<button></button>">
 		<div class="js-catalog__slige">
 		<div class="catalog__item">
 		<h3 class="catalog__heading">
