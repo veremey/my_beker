@@ -382,7 +382,7 @@ a.main__baner { display: inline-block; width: 1028px; height: auto; overflow: hi
 
 .ball { height: 17px; width: 80px; float: right; margin-top: -30px; }
 .ball .is-active { background: #525253; }
-.ball button { display: block; -webkit-border-radius: 50%; border-radius: 50%; border: 1px solid #525253; background-color: #ececec; float: left; width: 10px; height: 10px; margin-left: 5px; }
+.ball button { display: block; -webkit-border-radius: 50%; border-radius: 50%; border: 1px solid #525253; background-color: #ececec; float: left; width: 10px; font-size: 10px; height: 10px; margin-left: 5px; }
 .ball button:hover { background: #525253; }
 
 .catalog { position: relative; width: auto; height: 287px; *zoom: 1; }
