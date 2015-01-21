@@ -171,6 +171,7 @@ a.example__link:hover { border-bottom: none; }
 .site__tree { position: relative; margin: 25px 0 25px 26px; *zoom: 1; }
 .site__tree:after { content: " "; display: table; clear: both; }
 .site__tree a { display: inline-block; font: 13px normal, sans-serif; color: #1a1a1b; padding: 0 10px; }
+.site__tree a:hover { border-bottom: none; text-decoration: none; }
 .site__tree strong { padding: 0 10px; font: 13px Arial, sans-serif; }
 .site__tree i { position: absolute; bottom: 0; left: -10px; width: 21px; height: 19px; background: url(../img/home.png) no-repeat; }
 
