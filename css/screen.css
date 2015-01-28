@@ -48,7 +48,7 @@ body { font: normal 13px/1.15 Arial, sans-serif; min-width: 1050px; }
 .header__logo { float: left; background: url('../img/icons-sd997d36441.png') 0 -1356px no-repeat; width: 209px; height: 132px; }
 
 .header__form { position: relative; float: left; margin: 60px 10px 0px 65px; width: 300px; }
-.header__form i { right: 0; position: absolute; top: 10px; background: url('../img/icons-sd997d36441.png') 0 -1498px no-repeat; width: 16px; height: 16px; }
+.header__form button { right: 0; position: absolute; top: 10px; background: url('../img/icons-sd997d36441.png') 0 -1498px no-repeat; width: 16px; height: 16px; }
 
 .header__search-input { border: 3px solid #464646; height: 30px; padding-left: 10px; width: 294px; font-weight: bold; }
 
